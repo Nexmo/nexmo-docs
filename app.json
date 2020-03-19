@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "postdeploy": "bundle exec nexmo-developer --docs='.'"
+  },
+  "buildpacks": [
+    { "url": "https://github.com/Nexmo/heroku-buildpack-git-submodule" }
+  ],
+  "env": {
+    "GIT_REPO_URL": { "required": true },
+    "GIT_SSH_KEY": { "required": true },
+    "OAS_PATH": "_open_api/api_specs/definitions",
+    "DOCS_BASE_PATH": "."
+  },
+  "stack": "heroku-18"
+}

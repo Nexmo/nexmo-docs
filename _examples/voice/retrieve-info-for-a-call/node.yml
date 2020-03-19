@@ -1,0 +1,9 @@
+---
+code:
+    source: .repos/nexmo/nexmo-node-code-snippets/voice/get-call.js
+    from_line: 19
+    to_line: 24
+client:
+    source: .repos/nexmo/nexmo-node-code-snippets/voice/get-call.js
+    from_line: 10
+    to_line: 17

@@ -1,0 +1,7 @@
+---
+dependencies:
+    - nexmo@beta
+code:
+    source: .repos/nexmo/nexmo-node-code-snippets/messages/send-viber.js
+    from_line: 11
+    to_line: 30

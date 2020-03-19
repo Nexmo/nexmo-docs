@@ -1,0 +1,7 @@
+---
+dependencies:
+    - nexmo@beta
+code:
+    source: .repos/nexmo/nexmo-node-code-snippets/dispatch/send-failover-sms-mms.js
+    from_line: 20
+    to_line: 46

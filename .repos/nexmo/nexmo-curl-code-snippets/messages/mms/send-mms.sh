@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+source "../../config.sh"
+source "../../jwt.sh"
+
+curl -X POST https://api.nexmo.com/v0.1/messages \
+  -H 'Authorization: Bearer '$JWT\
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -d $'{ 
+   "from":{
+        "type": "mms",    
+        "number": "'$FROM_NUMBER'"
+   },
+   "to":{
+        "type": "mms",
+        "number": "'$TO_NUMBER'"
+   },
+   "message":{ 
+      "content":{
+          "type": "image",
+          "image": {
+              "url": "'$IMAGE_URL'"
+          }
+      }
+   }
+}'
